@@ -47,6 +47,7 @@ app.get('/todo', function (req, res) {
     .get('/todo/delete/:id', function (req, res) {
         if (req.params.id != '') {
             todolist.splice(req.params.id, 1);
+            
         }
         res.redirect('/todo');
     })
